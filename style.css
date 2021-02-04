@@ -1,0 +1,26 @@
+:root {
+  font-size: 62.5%;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 5rem auto;
+  width: 60%;
+  background-color: #c4c4c4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+textarea {
+  font-size: 1.6rem;
+}
