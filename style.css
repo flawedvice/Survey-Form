@@ -10,15 +10,35 @@ html {
 body {
   margin: 5rem auto;
   width: 60%;
-  background-color: #c4c4c4;
+  background-color: #1D3557;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
+  color: #F1FAEE;
 }
 h1, h2, h3, h4 {
   font-family: 'Roboto Mono', monospace;
 }
 
 
+
+.row {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 6rem 12rem;
+  display: flex;
+  text-align: center;
+  background-color: #F1FAEE;
+  color: #1D3557;
+}
 
 
 textarea {
