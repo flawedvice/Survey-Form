@@ -1,3 +1,4 @@
+/* -- GENERAL --*/
 :root {
   font-size: 62.5%;
 }
@@ -19,28 +20,72 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Roboto Mono', monospace;
 }
+/* -- GENERAL --*/
 
-
-
+/* -- UTILITIES -- */
+.section {
+  margin: 4rem 0 10rem 0;
+}
 .row {
   margin: 1rem auto;
   display: flex;
-  justify-content: space-between;
-  max-width: 100%;
+  flex-direction: column;
+  text-align: left;
 }
+.group {
+  display: flex;
+  flex-direction: row;
+}
+/* -- UTILITIES -- */
 
-.card {
+/* -- CARDS -- */
+.form-card {
   border: 1px solid #000;
   border-radius: 2rem;
   margin: auto;
   padding: 6rem 12rem;
-  display: flex;
   text-align: center;
   background-color: #F1FAEE;
   color: #1D3557;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  margin: auto;
+  width: calc(33.3% - 2rem);
+  text-align: center;
+  background-color: #457B9D;
+  color: #f1faee;
+}
+.card label {
+  padding: 2rem 5rem;
+}
+/* -- CARDS -- */
 
-
-textarea {
+/* -- FORM -- */
+input[type=text], input[type=email], input[type=number], select {
+  margin: 2rem 0;
+  height: 4rem;
   font-size: 1.6rem;
+}
+textarea {
+  margin: 0 auto;
+  max-width: 80%;
+  font-size: 1.6rem;
+}
+button {
+  border: 1px solid #000;
+  border-radius: 2rem;
+  padding: 1rem 4rem;
+  background-color: #457B9D;
+  color: #f1faee;
+}
+/* -- FORM -- */
+
+/* -- SPECIFICS -- */
+#type-service {
+  display: flex;
 }

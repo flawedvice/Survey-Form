@@ -13,41 +13,62 @@
 <body>
 
 <header>
-  <h1 id="title">Survey Form</h1>    <!-- US 1 -->
+  <h1 id="title">Custom Website Form</h1>    <!-- US 1 -->
 
-  <p id="description">Some explanation about the form...</p>    <!-- US 2 -->
+  <p id="description">Describe your dreamed website, submit the form and wait for it to become real!</p>    <!-- US 2 -->
 </header>
-<div class="card">
+<div class="form-card">
   <form class="" action="index.html" method="post" id="survey-form" autocomplete="on">    <!-- US 3 -->
 
     <div class="section" id="personal-data">
-      <h3>Your Data:</h3>
+      <h3>Your Data</h3>
       <div class="row">
-        <label for="name" id="name-label">Your Name:</label>
-        <input type="text" name="name" placeholder="Write your name... or just be John" id="name" required>    <!-- US 4 -->
+        <label for="name" id="name-label">Your Name</label>
+        <input type="text" name="name" placeholder="John" id="name" required>    <!-- US 4 -->
       </div>
       <div class="row">
-        <label for="name" id="lastname-label">Your Last Name:</label>
-        <input type="text" name="name" placeholder="Your last name or just Doe :p" id="name" required>
+        <label for="name" id="lastname-label">Your Last Name</label>
+        <input type="text" name="name" placeholder="Doe" id="name" required>
       </div>
       <div class="row">
-        <label for="email" id="email-label">Your Email:</label>
+        <label for="email" id="email-label">Your Email</label>
         <input type="email" name="email" placeholder="example@email.com" id="email" required>
       </div>
   </div>
 
   <div id="service-data">
-    <div id="type-service">
-      <h3>Type of Service:</h3>
-      <input type="radio" name="type-of-service" id="premium-service" required>
-      <label for="premium-service">Premium</label>
-      <input type="radio" name="type-of-service" id="plus-service" required>
-      <label for="plus-service">Plus</label>
-      <input type="radio" name="type-of-service" id="basic-service" required>
-      <label for="basic-service">Basic</label>
+    <h3>Type of Service:</h3>
+    <div class="section" id="type-service">
+      <div class="card">
+        <label for="basic-service">Basic
+          <h5>What's included?</h5>
+          <p>Feature 1</p>
+          <p>Feature 2</p>
+          <p>Feature 3</p>
+          <input type="radio" name="type-of-service" id="basic-service" required>
+        </label>
+      </div>
+      <div class="card">
+        <label for="plus-service">Plus
+          <h5>What's included?</h5>
+          <p>Feature 1</p>
+          <p>Feature 2</p>
+          <p>Feature 3</p>
+        <input type="radio" name="type-of-service" id="plus-service" required>
+        </label>
+      </div>
+      <div class="card">
+        <label for="premium-service">Premium
+          <h5>What's included?</h5>
+          <p>Feature 1</p>
+          <p>Feature 2</p>
+          <p>Feature 3</p>
+          <input type="radio" name="type-of-service" id="premium-service" required>
+        </label>
+      </div>
     </div>
 
-    <div id="website-features">
+    <div class="section"id="website-features">
       <h3>Website Features:</h3>
       <div class="row" id="type-website">
         <label for="dropdown">What type of website do you need?:</label>
@@ -67,43 +88,47 @@
 
       <br>
 
-      <div class="row" id="portfolio-group">
-        <input type="checkbox" name="bio" value="bio" id="check-bio">
-        <label for="check-bio">Bio</label>
-        <input type="checkbox" name="downloadable-content" value="downloadable-content" id="check-downloadable-content">
-        <label for="check-downloadable-content">Downloadable Content</label>
-        <input type="checkbox" name="contact-form" value="contact-form" id="check-contact-form"
-        <label for="check-contact-form">Contact Form</label>
-      </div>
-      <div class="row" id="ecommerce-group">
-        <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-shopping-cart">
-        <label for="check-shopping-cart">Shopping Cart</label>
-        <input type="checkbox" name="carousel" value="carousel" id="check-carousel">
-        <label for="check-carousel">Carousel</label>
-        <input type="checkbox" name="newsletter" value="newsletter" id="check-ecommerce-newsletter">
-        <label for="check-newsletter">Newsletter</label>
-      </div>
-      <div id="blog-group">
-        <div class="row" id="blog-group-radio">
-          <input type="radio" name="type-of-blog" id="wordpress" value="radio-wordpress">
-          <label for="wordpress">Wordpress Site</label>
-          <input type="radio" name="type-of-blog" id="custom" value="radio-custom">
-          <label for="custom">Custom Site</label>
+      <h4>Extra Features</h4>
+      <div class="row">
+        <div class="" id="portfolio">
+          <input type="checkbox" name="bio" value="bio" id="check-bio">
+          <label for="check-bio">Bio</label>
+          <input type="checkbox" name="downloadable-content" value="downloadable-content" id="check-downloadable-content">
+          <label for="check-downloadable-content">Downloadable Content</label>
+          <input type="checkbox" name="contact-form" value="contact-form" id="check-contact-form">
+          <label for="check-contact-form">Contact Form</label>
         </div>
-        <div class="row">
-          <input type="checkbox" name="newsletter" value="newsletter" id="check-blog-newsletter">
-          <label for="">Newsletter</label>
-          <input type="checkbox" name="contact-form" value="contact-form" id="check-blog-contact-form">
-          <label for="check-blog-contact-form">Contact Form</label>
+
+        <div class="" id="ecommerce">
+          <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-shopping-cart">
+          <label for="check-shopping-cart">Shopping Cart</label>
+          <input type="checkbox" name="carousel" value="carousel" id="check-carousel">
+          <label for="check-carousel">Carousel</label>
+          <input type="checkbox" name="newsletter" value="newsletter" id="check-ecommerce-newsletter">
+          <label for="check-newsletter">Newsletter</label>
         </div>
-      </div>
-      <div class="row" id="product-landing-group">
-        <input type="checkbox" name="preorder" value="preorder" id="check-product-landing-preorder">
-        <label for="check-product-landing-preorder">Preorder Options</label>
-        <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-product-landing-shopping-cart">
-        <label for="check-product-landing-shopping-cart">Shopping Cart</label>
-        <input type="checkbox" name="gallery" value="gallery" id="check-gallery">
-        <label for="check-gallery">Gallery</label>
+        <div id="blog">
+          <div class="" id="blog-radio">
+            <input type="radio" name="type-of-blog" id="wordpress" value="radio-wordpress">
+            <label for="wordpress">Wordpress Site</label>
+            <input type="radio" name="type-of-blog" id="custom" value="radio-custom">
+            <label for="custom">Custom Site</label>
+          </div>
+          <div class="" id="blog-check">
+            <input type="checkbox" name="newsletter" value="newsletter" id="check-blog-newsletter">
+            <label for="">Newsletter</label>
+            <input type="checkbox" name="contact-form" value="contact-form" id="check-blog-contact-form">
+            <label for="check-blog-contact-form">Contact Form</label>
+          </div>
+        </div>
+        <div class="" id="product-landing">
+          <input type="checkbox" name="preorder" value="preorder" id="check-product-landing-preorder">
+          <label for="check-product-landing-preorder">Preorder Options</label>
+          <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-product-landing-shopping-cart">
+          <label for="check-product-landing-shopping-cart">Shopping Cart</label>
+          <input type="checkbox" name="gallery" value="gallery" id="check-gallery">
+          <label for="check-gallery">Gallery</label>
+        </div>
       </div>
 
       <br>
