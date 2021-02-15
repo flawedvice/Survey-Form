@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   <link rel="stylesheet" href="/style.css">
   <title>Survey Form</title>
 </head>
@@ -73,10 +72,11 @@
       <div class="row" id="type-website">
         <label for="dropdown">What type of website do you need?:</label>
         <select class="" name="dropdown" id="dropdown" required>
-          <option value="portfolio">Personal Portfolio</option>
-          <option value="ecommerce">Ecommerce Site</option>
-          <option value="blog">Blog</option>
-          <option value="product-landing">Product Landing Page</option>
+            <option disabled selected> -- Select an option --</option>
+            <option value="portfolio" onclick="show(this.value)">Personal Portfolio</option>
+            <option value="ecommerce" onclick="show(this.value)">Ecommerce Site</option>
+            <option value="blog" onclick="show(this.value)">Blog</option>
+            <option value="product-landing" onclick="show(this.value)">Product Landing Page</option>
         </select>
       </div>
       <br>
@@ -88,49 +88,49 @@
 
       <br>
 
-      <h4>Extra Features</h4>
-      <div class="row">
-        <div class="" id="portfolio">
-          <input type="checkbox" name="bio" value="bio" id="check-bio">
-          <label for="check-bio">Bio</label>
-          <input type="checkbox" name="downloadable-content" value="downloadable-content" id="check-downloadable-content">
-          <label for="check-downloadable-content">Downloadable Content</label>
-          <input type="checkbox" name="contact-form" value="contact-form" id="check-contact-form">
-          <label for="check-contact-form">Contact Form</label>
-        </div>
+        <h4>Extra Features</h4>
+        <div class="row">
+          <div class="feature" id="portfolio">
+            <input type="checkbox" name="bio" value="bio" id="check-bio">
+            <label for="check-bio">Bio</label>
+            <input type="checkbox" name="downloadable-content" value="downloadable-content" id="check-downloadable-content">
+            <label for="check-downloadable-content">Downloadable Content</label>
+            <input type="checkbox" name="contact-form" value="contact-form" id="check-contact-form">
+            <label for="check-contact-form">Contact Form</label>
+          </div>
 
-        <div class="" id="ecommerce">
-          <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-shopping-cart">
-          <label for="check-shopping-cart">Shopping Cart</label>
-          <input type="checkbox" name="carousel" value="carousel" id="check-carousel">
-          <label for="check-carousel">Carousel</label>
-          <input type="checkbox" name="newsletter" value="newsletter" id="check-ecommerce-newsletter">
-          <label for="check-newsletter">Newsletter</label>
-        </div>
-        <div id="blog">
-          <div class="" id="blog-radio">
-            <input type="radio" name="type-of-blog" id="wordpress" value="radio-wordpress">
-            <label for="wordpress">Wordpress Site</label>
-            <input type="radio" name="type-of-blog" id="custom" value="radio-custom">
-            <label for="custom">Custom Site</label>
+          <div class="feature" id="ecommerce">
+            <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-shopping-cart">
+            <label for="check-shopping-cart">Shopping Cart</label>
+            <input type="checkbox" name="carousel" value="carousel" id="check-carousel">
+            <label for="check-carousel">Carousel</label>
+            <input type="checkbox" name="newsletter" value="newsletter" id="check-ecommerce-newsletter">
+            <label for="check-newsletter">Newsletter</label>
           </div>
-          <div class="" id="blog-check">
-            <input type="checkbox" name="newsletter" value="newsletter" id="check-blog-newsletter">
-            <label for="">Newsletter</label>
-            <input type="checkbox" name="contact-form" value="contact-form" id="check-blog-contact-form">
-            <label for="check-blog-contact-form">Contact Form</label>
+          <div class="feature" id="blog">
+            <div class="" id="blog-radio">
+              <input type="radio" name="type-of-blog" id="wordpress" value="radio-wordpress">
+              <label for="wordpress">Wordpress Site</label>
+              <input type="radio" name="type-of-blog" id="custom" value="radio-custom">
+              <label for="custom">Custom Site</label>
+            </div>
+            <div class="" id="blog-check">
+              <input type="checkbox" name="newsletter" value="newsletter" id="check-blog-newsletter">
+              <label for="">Newsletter</label>
+              <input type="checkbox" name="contact-form" value="contact-form" id="check-blog-contact-form">
+              <label for="check-blog-contact-form">Contact Form</label>
+            </div>
           </div>
-        </div>
-        <div class="" id="product-landing">
-          <input type="checkbox" name="preorder" value="preorder" id="check-product-landing-preorder">
-          <label for="check-product-landing-preorder">Preorder Options</label>
-          <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-product-landing-shopping-cart">
-          <label for="check-product-landing-shopping-cart">Shopping Cart</label>
-          <input type="checkbox" name="gallery" value="gallery" id="check-gallery">
-          <label for="check-gallery">Gallery</label>
+          <div class="feature" id="product-landing">
+            <input type="checkbox" name="preorder" value="preorder" id="check-product-landing-preorder">
+            <label for="check-product-landing-preorder">Preorder Options</label>
+            <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-product-landing-shopping-cart">
+            <label for="check-product-landing-shopping-cart">Shopping Cart</label>
+            <input type="checkbox" name="gallery" value="gallery" id="check-gallery">
+            <label for="check-gallery">Gallery</label>
+          </div>
         </div>
       </div>
-
       <br>
 
       <label for="additional-specs">Additional specifications:</label>
