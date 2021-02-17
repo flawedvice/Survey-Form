@@ -38,12 +38,12 @@
     <div id="service-data">
       <h3>Type of Service:</h3>
       <div class="section" id="type-service">
-        <div class="card">
+        <div class="card" onclick="typeService(this.child)">
           <label for="basic-service"><strong>Basic</strong>
             <h5>What's included?</h5>
             <p>1 Design</p>
             <p>3 Revisions</p>
-            <input type="radio" name="type-of-service" id="basic-service" required>
+            <input type="radio" name="type-of-service" id="basic-service" value="basic-service" required>
           </label>
         </div>
         <div class="card">
@@ -52,17 +52,16 @@
             <p>1 Design</p>
             <p>Unlimited Revisions</p>
             <p>Post-Service Support*</p>
-          <input type="radio" name="type-of-service" id="plus-service" required>
+            <input type="radio" name="type-of-service" id="plus-service" value="plus-service" required>
           </label>
         </div>
         <div class="card">
           <label for="premium-service"><strong>Premium</strong>
             <h5>What's included?</h5>
-            <p>Up to 4 Designs</p>
+            <p>4 Designs</p>
             <p>Unlimited Revisions</p>
             <p>Post-Service Support</p>
-            <p>Hosting</p>
-            <input type="radio" name="type-of-service" id="premium-service" required>
+            <input type="radio" name="type-of-service" id="premium-service" value="premium-service" required>
           </label>
         </div>
       </div>
