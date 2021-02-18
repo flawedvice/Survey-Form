@@ -1,6 +1,9 @@
 /* -- GENERAL --*/
 :root {
   font-size: 62.5%;
+  --maincolor: #1D3557;
+  --secondcolor: #F1FAEE;
+  --extracolor: #457B9D;
 }
 html {
   box-sizing: border-box;
@@ -11,11 +14,11 @@ html {
 body {
   margin: 5rem auto;
   width: 60%;
-  background-color: #1D3557;
+  background-color: var(--maincolor);
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  color: #F1FAEE;
+  color: var(--secondcolor);
 }
 h1, h2, h3, h4 {
   font-family: 'Roboto Mono', monospace;
@@ -45,8 +48,8 @@ h1, h2, h3, h4 {
   margin: auto;
   padding: 6rem 12rem;
   text-align: center;
-  background-color: #F1FAEE;
-  color: #1D3557;
+  background-color: var(--secondcolor);
+  color: var(--maincolor);
 }
 .card {
   display: flex;
@@ -59,8 +62,8 @@ h1, h2, h3, h4 {
   width: calc(33.3% - 2rem);
   text-align: center;
   align-items: flex-start;
-  background-color: #457B9D;
-  color: #f1faee;
+  background-color: var(--extracolor);
+  color: var(--secondcolor);
 }
 .card label {
   padding: 2rem 5rem;
@@ -75,10 +78,31 @@ h1, h2, h3, h4 {
 .card input {
   visibility: hidden;
 }
-.checkedCard {
-  background-color: #f1faee;
-  color: #457B9D;
+.card label:hover {
+  cursor: pointer;
 }
+.checkedCard {
+  background-color: var(--secondcolor);
+  color: var(--extracolor);
+}
+.feature-card {
+  display: none;
+  padding: 0 6rem;
+  height: 12rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--extracolor);
+  color: var(--secondcolor);
+}
+.feature-card input {
+  display: none;
+}
+.feature-card label:hover {
+  cursor: pointer;
+  background-color: var(--secondcolor);
+  color: var(--maincolor);
+}
+
 /* -- CARDS -- */
 
 /* -- FORM -- */
@@ -96,15 +120,15 @@ button {
   border: 1px solid #000;
   border-radius: 2rem;
   padding: 1rem 4rem;
-  background-color: #457B9D;
+  background-color: var(--extracolor);
   color: #f1faee;
+}
+button:hover {
+  cursor: pointer;
 }
 /* -- FORM -- */
 
 /* -- SPECIFICS -- */
 #type-service {
   display: flex;
-}
-.feature {
-  display: none;
 }

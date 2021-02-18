@@ -1,10 +1,9 @@
 "use strict";
 
 
-
 function show(value) {    // Shows the extra features of each type of website when selected at  "Website Features"
   let id = value;
-  let features = document.getElementsByClassName('feature');
+  let features = document.getElementsByClassName('feature-card');
 
   for(let i = 0; i < features.length; i++) {
     features[i].style.display = "none";
@@ -14,8 +13,9 @@ function show(value) {    // Shows the extra features of each type of website wh
       inputs[j].checked = false;
     }
   }
-  let showEl = document.getElementById(id).style.display = "inline-block";
+  let showEl = document.getElementById(id).style.display = "flex";
 }
+
 
 
 function checkService(){    // Checks which type of service was selected and then changes its colors
