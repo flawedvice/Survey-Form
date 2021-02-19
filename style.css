@@ -23,6 +23,7 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Roboto Mono', monospace;
 }
+
 /* -- GENERAL --*/
 
 /* -- UTILITIES -- */
@@ -55,7 +56,6 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid #000;
   border-radius: 2rem;
   margin: auto;
   height: 40rem;
@@ -66,11 +66,14 @@ h1, h2, h3, h4 {
   color: var(--secondcolor);
 }
 .card label {
-  padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border-radius: 2rem;
+  padding: 2rem 5rem;
   height: 100%;
+  background-color: var(--extracolor);
+  transition: transform .3s, border .1s;
 }
 .card p {
   font-size: 1.6rem;
@@ -80,27 +83,35 @@ h1, h2, h3, h4 {
 }
 .card label:hover {
   cursor: pointer;
-}
-.checkedCard {
+  border: .6rem solid var(--extracolor);
   background-color: var(--secondcolor);
   color: var(--extracolor);
+  transform: scale(1.1);
 }
-.feature-card {
+
+.card label:active {
+  transition: transform .1s;
+  transform: scale(1);
+}
+
+.checkedCard {
+  background-color: var(--secondcolor)!important;
+  color: var(--extracolor)!important;
+}
+.extra-feature-card {
   display: none;
   padding: 0 6rem;
   height: 12rem;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--extracolor);
-  color: var(--secondcolor);
 }
-.feature-card input {
-  display: none;
-}
-.feature-card label:hover {
+.extra-feature-card label:hover, .extra-feature-card input:hover {
   cursor: pointer;
   background-color: var(--secondcolor);
   color: var(--maincolor);
+}
+.blog-card {
+  flex-direction: column;
 }
 
 /* -- CARDS -- */
@@ -112,19 +123,22 @@ input[type=text], input[type=email], input[type=number], select {
   font-size: 1.6rem;
 }
 textarea {
-  margin: 0 auto;
+  margin: 2rem auto 4rem;
   max-width: 80%;
   font-size: 1.6rem;
 }
 button {
-  border: 1px solid #000;
   border-radius: 2rem;
+  margin: 2rem auto;
   padding: 1rem 4rem;
   background-color: var(--extracolor);
   color: #f1faee;
+  transition: all .2s linear;
 }
 button:hover {
   cursor: pointer;
+  background-color: var(--secondcolor);
+  color: var(--extracolor);
 }
 /* -- FORM -- */
 

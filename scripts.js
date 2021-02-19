@@ -3,7 +3,7 @@
 
 function show(value) {    // Shows the extra features of each type of website when selected at  "Website Features"
   let id = value;
-  let features = document.getElementsByClassName('feature-card');
+  let features = document.getElementsByClassName('extra-feature-card');
 
   for(let i = 0; i < features.length; i++) {
     features[i].style.display = "none";
