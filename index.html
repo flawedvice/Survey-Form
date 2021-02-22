@@ -26,8 +26,8 @@
         <input type="text" name="name" placeholder="John" id="name" required>    <!-- US 4 -->
       </div>
       <div class="row">
-        <label for="name" id="lastname-label">Your Last Name</label>
-        <input type="text" name="name" placeholder="Doe" id="name" required>
+        <label for="lastname" id="lastname-label">Your Last Name</label>
+        <input type="text" name="lastname" placeholder="Doe" id="lastname" required>
       </div>
       <div class="row">
         <label for="email" id="email-label">Your Email</label>
@@ -69,8 +69,8 @@
       <div class="section"id="website-features">
         <h3>Website Features:</h3>
         <div class="row" id="type-website">
-          <label for="dropdown">What type of website do you need?:</label>
-          <select class="" name="dropdown" id="dropdown" required>
+          <label for="type-of-website">What type of website do you need?:</label>
+          <select class="" name="type-of-website" id="type-of-website" required>
               <option disabled selected> -- Select an option --</option>
               <option value="portfolio" onclick="show(this.value)">Personal Portfolio</option>
               <option value="ecommerce" onclick="show(this.value)">Ecommerce Site</option>
@@ -81,28 +81,28 @@
         <br>
 
         <div class="row" id="number-pages">
-          <label for="number" id="number-label">Number of Pages:</label>
-          <input type="number" name="number" placeholder="The maximum is 10 pages" id="number" min="1" max="10">    <!-- US 7-->
+          <label for="number-of-pages" id="number-label">Number of Pages:</label>
+          <input type="number" name="number-of-pages" placeholder="The maximum is 10 pages" id="number-of-pages" min="1" max="10">    <!-- US 7-->
         </div>
 
         <br>
           <h3>Extra Features</h3>
           <div class="row">
             <div class="extra-feature-card portfolio" id="portfolio">
-              <input type="checkbox" name="bio" value="bio" id="check-bio">
+              <input type="checkbox" name="portfolio-feature1" value="bio" id="check-bio">
               <label for="check-bio">Bio</label>
-              <input type="checkbox" name="downloadable-content" value="downloadable-content" id="check-downloadable-content">
+              <input type="checkbox" name="portfolio-feature2" value="downloadable-content" id="check-downloadable-content">
               <label for="check-downloadable-content">Downloadable Content</label>
-              <input type="checkbox" name="contact-form" value="contact-form" id="check-contact-form">
+              <input type="checkbox" name="portfolio-feature3" value="contact-form" id="check-contact-form">
               <label for="check-contact-form">Contact Form</label>
             </div>
 
             <div class="extra-feature-card" id="ecommerce">
-              <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-shopping-cart">
+              <input type="checkbox" name="ecommerce-feature1" value="shopping-cart" id="check-shopping-cart">
               <label for="check-shopping-cart">Shopping Cart</label>
-              <input type="checkbox" name="carousel" value="carousel" id="check-carousel">
+              <input type="checkbox" name="ecommerce-feature2" value="carousel" id="check-carousel">
               <label for="check-carousel">Carousel</label>
-              <input type="checkbox" name="newsletter" value="newsletter" id="check-ecommerce-newsletter">
+              <input type="checkbox" name="ecommerce-feature3" value="newsletter" id="check-ecommerce-newsletter">
               <label for="check-ecommerce-newsletter">Newsletter</label>
             </div>
             <div class="extra-feature-card blog-card" id="blog">
@@ -113,18 +113,18 @@
                 <label for="custom">Custom Site</label>
               </div>
               <div class="" id="blog-check">
-                <input type="checkbox" name="newsletter" value="newsletter" id="check-blog-newsletter">
+                <input type="checkbox" name="blog-feature1" value="newsletter" id="check-blog-newsletter">
                 <label for="check-blog-newsletter">Newsletter</label>
-                <input type="checkbox" name="contact-form" value="contact-form" id="check-blog-contact-form">
+                <input type="checkbox" name="blog-feature2" value="contact-form" id="check-blog-contact-form">
                 <label for="check-blog-contact-form">Contact Form</label>
               </div>
             </div>
             <div class="extra-feature-card" id="product-landing">
-              <input type="checkbox" name="preorder" value="preorder" id="check-product-landing-preorder">
+              <input type="checkbox" name="product-landing-feature1" value="preorder" id="check-product-landing-preorder">
               <label for="check-product-landing-preorder">Preorder Options</label>
-              <input type="checkbox" name="shopping-cart" value="shopping-cart" id="check-product-landing-shopping-cart">
+              <input type="checkbox" name="product-landing-feature2" value="shopping-cart" id="check-product-landing-shopping-cart">
               <label for="check-product-landing-shopping-cart">Shopping Cart</label>
-              <input type="checkbox" name="gallery" value="gallery" id="check-gallery">
+              <input type="checkbox" name="product-landing-feature3" value="gallery" id="check-gallery">
               <label for="check-gallery">Gallery</label>
             </div>
           </div>
