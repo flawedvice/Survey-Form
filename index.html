@@ -69,8 +69,8 @@
       <div class="section"id="website-features">
         <h3>Website Features:</h3>
         <div class="row" id="type-website">
-          <label for="type-of-website">What type of website do you need?:</label>
-          <select class="" name="type-of-website" id="type-of-website" required>
+          <label for="dropdown">What type of website do you need?:</label>
+          <select class="" name="type-of-website" id="dropdown" required>
               <option disabled selected> -- Select an option --</option>
               <option value="portfolio" onclick="show(this.value)">Personal Portfolio</option>
               <option value="ecommerce" onclick="show(this.value)">Ecommerce Site</option>
@@ -82,7 +82,7 @@
 
         <div class="row" id="number-pages">
           <label for="number-of-pages" id="number-label">Number of Pages:</label>
-          <input type="number" name="number-of-pages" placeholder="The maximum is 10 pages" id="number-of-pages" min="1" max="10">    <!-- US 7-->
+          <input type="number" name="number-of-pages" placeholder="The maximum is 10 pages" id="number" min="1" max="10">    <!-- US 7-->
         </div>
 
         <br>
@@ -129,7 +129,7 @@
             </div>
           </div>
           <br>
-          <div class="">
+          <div class="additional-specs">
             <label for="additional-specs">Additional specifications:</label>
             <textarea name="additional-specs" rows="8" cols="80" id="additional-specs"></textarea>
           </div>

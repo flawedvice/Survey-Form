@@ -38,34 +38,3 @@ function checkService(){    // Checks which type of service was selected and the
   let selectedCard = document.getElementById(selected).parentElement;   // Adds the "checked" card colors to the checked radio's card.
   selectedCard.classList.add("checkedCard");
 }
-
-
-
-
-let form = document.getElementsByTagName('form')[0];
-form.onsubmit = async (event) => {
-  event.preventDefault();
-  let data = new FormData(form);
-  let value = Object.fromEntries(data.entries());
-  console.log(value);
-
-  const request = new XMLHttpRequest();
-
-  request.open('POST', 'https://api.clickup.com/api/v2/list/6-11571035-1/task/');
-  request.setRequestHeader('Authorization', 'pk_3131202_J2ZVH2UNVJBEXQCOSW3G9GWCBW0331CL');
-  request.setRequestHeader('Content-Type', 'application/json');
-
-  request.onreadystatechange = function() {
-    if(this.readyState === 4 && this.status === 201) {
-      console.log('Status:', this.status);
-      console.log('Headers', this.getAllResponseHeaders());
-      console.log('Body', this.responseText);
-    }
-  };
-
-  var body = {
-    'name': value.name,
-    'description': `${value.name} ${value.lastname} solicita un servicio de tipo ${value.type-of-service}
-    para construir un sitio ${value.type-of-website} de ${value.number-of-pages} con ${value}`
-  }
-};
